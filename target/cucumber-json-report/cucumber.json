@@ -1,0 +1,112 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 14,
+        "name": "login to facebook.com with data driven with Example Keyword having external data sources",
+        "description": "",
+        "id": "login-to-facebook;login-to-facebook.com-with-data-driven-with-example-keyword-having-external-data-sources;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 279219600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "browser, url, username and password from configuration.properties \"configuration.properties\" file",
+            "match": {
+              "arguments": [
+                {
+                  "val": "configuration.properties",
+                  "offset": 67
+                }
+              ],
+              "location": "LoginWithDataDrivenWithSqlFileAndConfigFileReading.browser_url_username_and_password_from_configuration_properties_file(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 874941200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "query from sql \"Countries.sql\" file",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Countries.sql",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginWithDataDrivenWithSqlFileAndConfigFileReading.query_from_sql_file(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 70900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "LoginWithDataDrivenWithSqlFileAndConfigFileReading.user_clicks_on_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 101200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should be able to login with authorized credential only",
+            "match": {
+              "location": "LoginWithDataDrivenWithSqlFileAndConfigFileReading.user_should_be_able_to_login_with_authorized_credential_only()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 81600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Quit Browser with Sql File And Config File Reading",
+            "match": {
+              "location": "LoginWithDataDrivenWithSqlFileAndConfigFileReading.quit_Browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@LoginWithDataDrivenWithSqlFileAndConfigFileReading"
+          }
+        ]
+      }
+    ],
+    "name": "Login to facebook",
+    "description": "",
+    "id": "login-to-facebook",
+    "keyword": "Feature",
+    "uri": "Features/LoginWithDataDrivenWithSqlFileAndConfigFileReading.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@LoginWithDataDrivenWithSqlFileAndConfigFileReading"
+      }
+    ]
+  }
+]
